@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+
+*{
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* Navbar */
+body {
+  height: 2000px;
+}
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.fa-bars {
+  color: #007bff;
+  font-size: 30px;
+}
+
+/* carousel banner */
+.carousel-inner img {
+  margin: auto;
+}
+section {
+  padding: 20px;
+}
+
+/* carousel banner */
+.card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #333;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+@media screen and (min-width: 577px) {
+  .cards-wrapper {
+    display: flex;
+  }
+  .card {
+    margin: 0 0.5em;
+    width: calc(100% / 2);
+  }
+  .image-wrapper {
+    height: 20vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* Estilos del pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Estilos del pagina de detalles */
+
+
+.details-card, .cart-wrapper{
+  width: 80%;
+  margin: auto;
+}
+
+
+.description-container {
+  position: relative;
+}
+
+.main-description1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.main-description h3 {
+  font-size: 2rem;
+}
+
+.add-inputs,
+.add-inputs input {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+.add-inputs button {
+  border-radius: 0;
+}
+
+.add-inputs input {
+  height: 48px;
+  width: 65px;
+  border-radius: 0;
+}
+
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 1.8rem;
+}
+
+.social-list {
+  padding: 0;
+  list-style: none;
+}
+
+.social-list li {
+  float: left;
+  padding: 6px 8px;
+  margin-right: 12px;
+}
+
+.social-list li a {
+  color: black;
+  font-size: 2rem;
+}
+
+.social-list li a i {
+  font-size: 2rem;
+}
+
+/* Estilos del pagina de carrito */
+/*TODO: hacerlo full responsive, actualmente unicamente col-lg*/
+
+@media screen and (max-width: 576px) {
+  .desc-prod-cart{
+    display: none;
+  }
+}
+
+
+/* Estilos de la barra de búsqueda */
+.search-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Estilos del formulario de inicio de sesión */
+.login-section {
+  text-align: center;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.password-recovery-link,
+.login-button,
+.google-login-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover,
+.google-login-button:hover {
+  background-color: #555;
+}
+
+/* Barra d enavegacion test*/
+.my-navbar{
+  background: #333;
+  border-radius: 0;
+  border: 0;
+}
+
+.my-navbar .navbar-brand{
+  color: white;
+}
+
+
+/* Test boton */
+
+.btn{
+  background-color: #333;
+  border-color:#333;
+  color: #fff;
+}
+
+.btn:hover, .btn-primary, .btn-primary:active{
+  color: white;
+  background-color: #474747;
+  border-color: #474747;
+}
+
+
+
+
+
+
