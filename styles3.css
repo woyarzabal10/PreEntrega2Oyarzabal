@@ -5,10 +5,21 @@
   font-family: "Titillium Web", sans-serif;
 }
 
-/* Navbar */
-body {
-  height: 2000px;
+html {
+  height: 100%;
 }
+
+body {
+  min-height: 100%;
+  padding-bottom: 50px;
+  background-color: #e2e2e2;
+}
+
+.logo{
+  width:100%;
+  max-width:150px;
+}
+/* Navbar */
 .navbar .navbar-brand {
   font-size: 30px;
 }
@@ -20,14 +31,23 @@ body {
   margin-left: 10px;
 }
 .fa-bars {
-  color: #007bff;
   font-size: 30px;
 }
 
+/* Barra de navegacion test*/
+.my-navbar, .navbar, .nav-link, .fa-bars{
+  background: #131921;
+  color: #ffffffb9;
+}
+
+.nav-link:hover, .fa-bars{
+  color: #fff;
+}
 /* carousel banner */
 .carousel-inner img {
   margin: auto;
 }
+
 section {
   padding: 20px;
 }
@@ -35,7 +55,7 @@ section {
 /* carousel banner */
 .card {
   border: none;
-  border-radius: 0;
+  border-radius: 10px;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 }
 .carousel-inner {
@@ -74,6 +94,16 @@ section {
   }
 }
 
+.card-title{
+  font-weight: bold;
+  
+}
+
+.card-text{
+  color: #23b268;
+  margin-bottom: 0px;
+}
+
 .image-wrapper img {
   max-width: 100%;
   max-height: 100%;
@@ -86,31 +116,23 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px;
-  position: fixed;
+  width: 100%;
   bottom: 0;
   left: 0;
-  width: 100%;
+  position: fixed;
+  
+  margin-top: auto;
 }
 
 /* Estilos del pagina de detalles */
-
 
 .details-card, .cart-wrapper{
   width: 80%;
   margin: auto;
 }
 
-
 .description-container {
   position: relative;
-}
-
-.main-description1 {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 .main-description h3 {
@@ -134,7 +156,6 @@ footer {
   border-radius: 0;
 }
 
-
 .product-title {
   font-size: 1.1rem;
   font-weight: bold;
@@ -144,25 +165,6 @@ footer {
   font-size: 1.8rem;
 }
 
-.social-list {
-  padding: 0;
-  list-style: none;
-}
-
-.social-list li {
-  float: left;
-  padding: 6px 8px;
-  margin-right: 12px;
-}
-
-.social-list li a {
-  color: black;
-  font-size: 2rem;
-}
-
-.social-list li a i {
-  font-size: 2rem;
-}
 
 /* Estilos del pagina de carrito */
 /*TODO: hacerlo full responsive, actualmente unicamente col-lg*/
@@ -172,7 +174,6 @@ footer {
     display: none;
   }
 }
-
 
 /* Estilos de la barra de búsqueda */
 .search-bar {
@@ -243,18 +244,6 @@ a {
 .google-login-button:hover {
   background-color: #555;
 }
-
-/* Barra d enavegacion test*/
-.my-navbar{
-  background: #333;
-  border-radius: 0;
-  border: 0;
-}
-
-.my-navbar .navbar-brand{
-  color: white;
-}
-
 
 /* Test boton */
 
