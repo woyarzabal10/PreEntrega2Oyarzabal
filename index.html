@@ -91,7 +91,9 @@
 
   <section class="container">
     <h2>Productos en Oferta</h2>
-    <div id="deals-carousel" class="carousel slide" data-interval="false">
+
+    <!-- Version desktop -->
+    <div id="deals-carousel" class="carousel slide d-none d-sm-block" data-interval="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="cards-wrapper">
@@ -171,11 +173,63 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <!-- Version mobile -->
+
+    <div id="deals-carousel-mobile" class="carousel slide d-sm-none" data-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card">
+            <div class="image-wrapper">
+              <a href="details.html"><img src="images/prod-placeholder-1.png" alt="..."></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">$ 2.588</h5>
+              <p class="card-text">10x $ 285 sin interés.</p>
+              <p class="card-text">Envio gratis</p>
+            </div>
+          </div>         
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="image-wrapper">
+              <a href="details.html"><img src="images/prod-placeholder-2.png" alt="..."></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">$ 2.588</h5>
+              <p class="card-text">10x $ 285 sin interés.</p>
+              <p class="card-text">Envio gratis</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="image-wrapper">
+              <a href="details.html"><img src="images/prod-placeholder-3.png" alt="..."></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">$ 2.588</h5>
+              <p class="card-text">10x $ 285 sin interés.</p>
+              <p class="card-text">Envio gratis</p>
+            </div>
+          </div>
+        </div>
+        <!--TODO : Agregar 3 items mas-->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#deals-carousel-mobile" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#deals-carousel-mobile" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </section>
 
   <section class="container">
     <h2>Productos Recomendados</h2>
-    <div id="recommended-carousel" class="carousel slide" data-interval="false">
+    <div id="recommended-carousel" class="carousel slide d-none d-sm-block" data-interval="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="cards-wrapper">
@@ -251,6 +305,58 @@
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#recommended-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Version mobile -->
+
+    <div id="recommended-carousel-mobile" class="carousel slide d-sm-none" data-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card">
+            <div class="image-wrapper">
+              <a href="details.html"><img src="images/prod-placeholder-1.png" alt="..."></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">$ 2.588</h5>
+              <p class="card-text">10x $ 285 sin interés.</p>
+              <p class="card-text">Envio gratis</p>
+            </div>
+          </div>         
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="image-wrapper">
+              <a href="details.html"><img src="images/prod-placeholder-2.png" alt="..."></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">$ 2.588</h5>
+              <p class="card-text">10x $ 285 sin interés.</p>
+              <p class="card-text">Envio gratis</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="image-wrapper">
+              <a href="details.html"><img src="images/prod-placeholder-3.png" alt="..."></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">$ 2.588</h5>
+              <p class="card-text">10x $ 285 sin interés.</p>
+              <p class="card-text">Envio gratis</p>
+            </div>
+          </div>
+        </div>
+        <!--TODO : Agregar 3 items mas-->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#recommended-carousel-mobile" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#recommended-carousel-mobile" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
