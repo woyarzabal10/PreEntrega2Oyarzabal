@@ -19,6 +19,11 @@ body {
   width:100%;
   max-width:150px;
 }
+
+.cat-title{
+  padding-bottom: 10px;
+}
+
 /* Navbar */
 .navbar .navbar-brand {
   font-size: 30px;
@@ -35,14 +40,18 @@ body {
 }
 
 /* Barra de navegacion test*/
-.my-navbar, .navbar, .nav-link, .fa-bars{
+.my-navbar, .navbar, .nav-link, .fa-bars, .dropdown-menu, .dropdown-item{
   background: #131921;
   color: #ffffffb9;
 }
 
-.nav-link:hover, .fa-bars{
+.dropdown-item:hover{
+  background: #19222c;
+}
+.nav-link:hover, .fa-bars, .dropdown-item:hover{
   color: #fff;
 }
+
 /* carousel banner */
 .carousel-inner img {
   margin: auto;
@@ -96,10 +105,6 @@ h2{
   .card:not(:first-child) {
     display: none;
   }
-}
-
-.card-title{
-  
 }
 
 .card-title{
