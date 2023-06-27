@@ -127,10 +127,6 @@ h2{
   max-height: 100%;
 }
 
-
-
-
-/* Estilos del pie de página */
 footer {
   background-color: #333;
   color: #fff;
@@ -143,8 +139,6 @@ footer {
   
   margin-top: auto;
 }
-
-/* Estilos del pagina de detalles */
 
 .details-card, .cart-wrapper{
   width: 80%;
@@ -185,17 +179,13 @@ footer {
   font-size: 1.8rem;
 }
 
-
-/* Estilos del pagina de carrito */
-/*TODO: hacerlo full responsive, actualmente unicamente col-lg*/
-
 @media screen and (max-width: 576px) {
   .desc-prod-cart{
     display: none;
   }
 }
 
-/* Estilos de la barra de búsqueda */
+
 .search-bar {
   padding-top: 1em;
   display: flex;
@@ -218,7 +208,7 @@ footer {
   cursor: pointer;
 }
 
-/* Estilos del formulario de inicio de sesión */
+
 .login-section {
   text-align: center;
 }
